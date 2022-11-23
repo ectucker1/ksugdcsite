@@ -1,0 +1,23 @@
+{
+  "name": "ksugdcsite",
+  "version": "1.0.0",
+  "description": "K-State Game Development Club Website",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npm-run-all --parallel serve:*",
+    "serve:html": "cross-env ELEVENTY_ENV=development npx @11ty/eleventy --serve --incremental --port=8080",
+    "serve:css": "postcss --watch src/assets/styles/*.css -o _site/assets/styles/main.css --map",
+    "build": "run-s build:html build:css",
+    "build:html": "cross-env ELEVENTY_ENV=production npx @11ty/eleventy",
+    "build:css": "postcss src/assets/styles/*.css -o _site/assets/styles/main.css --no-map"
+  },
+  "author": "Ethan Tucker",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2",
+    "@11ty/eleventy-img": "^2.0.1",
+    "autoprefixer": "^10.4.13",
+    "cross-env": "^7.0.3",
+    "postcss-cli": "^9.1.0"
+  }
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://gdc.cs.ksu.edu/
+
+# Sitemaps
+Sitemap: https://gdc.cs.ksu.edu/sitemap.xml
