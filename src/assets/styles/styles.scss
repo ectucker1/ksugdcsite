@@ -1,0 +1,67 @@
+@import "constants.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "home.scss";
+@import "officer.scss";
+@import "featured.scss";
+
+body {
+  min-width: 360px;
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+hr.hr-light,
+hr.hr-primary {
+  max-width: 250px;
+  margin: 25px auto 30px;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 3px;
+  transform: translateY(2px);
+}
+
+hr.hr-light:after,
+hr.hr-primary:after {
+  font-family: FontAwesome;
+  font-size: 2em;
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 .25em;
+  content: '\f11b';
+}
+
+hr.hr-light {
+  border-color: #fff
+}
+
+hr.hr-light:after {
+  color: #fff;
+  background-color: $section-bg
+}
+
+hr.hr-primary {
+  border-color: black
+}
+
+hr.hr-primary:after {
+  color: black;
+  background-color: #fff
+}
+
+html {
+  scroll-behavior: smooth;
+}

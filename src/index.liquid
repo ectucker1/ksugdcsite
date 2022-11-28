@@ -1,0 +1,51 @@
+---
+permalink: /
+layout: default
+title: K-State GDC
+---
+<header class="masthead">
+  <div class="container">
+    <img class="img-fluid rounded-circle logo-container" src="assets/images/gdclogo.png">
+    <div class="intro-text">
+      <h1 class="name">K-State GDC</h1>
+      <span class="description">
+        K-State’s Game Development Club is the club to be in at K-State. We get together every week
+        to develop every kind of game imaginable. We welcome all majors and skill levels to join us as we discuss
+        aspects of game development, gaming trends, and just about anything else our members want to discuss. To see
+        the games we are working on check below.
+      </span>
+    </div>
+  </div>
+</header>
+
+<section id="featured">
+  <div class="container text-center">
+    <h2 class="mobile-header text-center">Featured</h2>
+    <hr class="hr-primary">
+    <div class="row">
+      {% for item in featured %}
+        <div class="col">
+          {% include 'featured.liquid', item: item %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="success" id="about">
+  <div class="container">
+    <h2 class="mobile-header text-center">Meet the Team</h2>
+    <hr class="hr-light">
+    <div class="row">
+      <div class="col-lg ml-auto">
+        <div class="row">
+          {% for officer in officers %}
+            <div class="col-sm-4 col-6 text-center mb-4">
+              {% include 'officer.liquid', officer: officer %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

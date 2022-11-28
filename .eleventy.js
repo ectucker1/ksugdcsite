@@ -1,5 +1,6 @@
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const Image = require("@11ty/eleventy-img");
+const { DateTime } = require('luxon');
 
 // Site directories
 const dir = {
@@ -19,7 +20,7 @@ module.exports = (eleventyConfig) => {
 
     // Static assets
     eleventyConfig.addPassthroughCopy('src/assets/images');
-    eleventyConfig.addPassthroughCopy('src/assets/fonts');
+    eleventyConfig.addPassthroughCopy('src/favicon.ico');
 
     // Render plugin
     eleventyConfig.addPlugin(EleventyRenderPlugin, {
@@ -53,6 +54,11 @@ module.exports = (eleventyConfig) => {
         return Image.generateHTML(imageMetadata, imageAttributes);
     };
     eleventyConfig.addShortcode("image", imageShortcode)
+
+    // Current date shortcode
+    eleventyConfig.addShortcode("currentDate", (date = DateTime.now()) => {
+        return date;
+    });
 
     // robots.txt
     eleventyConfig.addPassthroughCopy('src/robots.txt');

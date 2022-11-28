@@ -1,0 +1,22 @@
+[
+  {
+    "position": "President",
+    "name": "Ethan Tucker",
+    "image": "test.png"
+  },
+  {
+    "position": "Vice President",
+    "name": "Ayden Harman",
+    "image": "test.png"
+  },
+  {
+    "position": "Treasurer",
+    "name": "Gage Sadrakula",
+    "image": "test.png"
+  },
+  {
+    "position": "Advisor",
+    "name": "Nathan Bean",
+    "image": "nathan_bean.jpg"
+  }
+]

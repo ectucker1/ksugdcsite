@@ -1,0 +1,33 @@
+$contrast-color: #fff;
+
+.btn-social {
+  font-size: 25px;
+  line-height: 47px;
+  display: inline-block;
+  width: 53px;
+  height: 53px;
+  color: $contrast-color;
+  text-align: center;
+  border: 2px solid $contrast-color;
+  border-radius: 100%
+}
+
+.btn-social:hover {
+  color: $nav-bg;
+  background: $contrast-color;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .2s;
+}
+
+footer {
+  color: $contrast-color;
+  background: $nav-bg;
+}
+
+.footer-above {
+  border: none;
+  background: $nav-bg;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

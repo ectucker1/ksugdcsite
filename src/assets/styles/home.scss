@@ -1,0 +1,79 @@
+body {
+  min-width: 450px;
+}
+
+.logo-container {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+header.masthead {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  color: white;
+  background: #0e78ba;
+}
+
+header.masthead img {
+  display: block;
+  margin: 0 auto 20px
+}
+
+header.masthead .intro-text .name {
+  font-size: 3em;
+  display: block
+}
+
+header.masthead .intro-text .description {
+  font-size: 1em;
+  font-weight: 300
+}
+
+section.success {
+  color: white;
+  background: #0e78ba;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.featured-btn {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media(max-width: 770px) {
+  .logo-container {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+@media(max-width: 600px) {
+  .mobile-header {
+    font-size: 30px;
+  }
+
+  .logo-container {
+    max-width: 250px;
+    max-height: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  header.masthead .intro-text .name {
+    font-size: 4.75em
+  }
+
+  header.masthead .intro-text .description {
+    font-size: 1.5em
+  }
+
+  .portfolio-item {
+    margin: 0 0 30px
+  }
+}
